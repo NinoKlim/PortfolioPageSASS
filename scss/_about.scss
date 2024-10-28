@@ -1,6 +1,5 @@
 .about {
   padding-bottom: 2rem;
-
   &__bio-image {
     height: 50vh;
     width: 100%;
@@ -9,29 +8,26 @@
         rgba($primary-color, 0.9),
         rgba($primary-color, 0.3)
       ),
-      url(../img/model-1.jpg) center top;
+      url("../img/model-1.jpg") center top;
     background-size: cover;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    p {
-      margin-bottom: 2rem;
-    }
+
+    align-items: flex-end;
+    justify-content: center;
   }
   &__bio {
     width: 80%;
     text-align: center;
-
+    margin-bottom: 2rem;
     .text-secondary {
       padding-bottom: 1rem;
     }
     h2 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
   }
   .jobs {
-    width: 60vw;
+    width: 70vw;
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -41,25 +37,22 @@
       padding: 0.5rem;
       border-bottom: 5px solid $secondary-color;
 
-      h2,
-      h3 {
-        margin: 0.5rem 0;
-        font-weight: 200;
-      }
-      h6 {
-        margin: 0.3rem 0;
-        font-weight: 300;
-      }
-      p {
-        font-size: 0.8rem;
+      &-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
       }
     }
+  }
+  h4 {
+    font-weight: 400;
   }
   .social-icons {
     display: flex;
     flex-direction: column;
   }
   footer {
-    transform: rotate(90deg) translate(-3rem, -5rem);
+    transform: rotate(90deg) translate(-3rem, -4rem);
   }
 }

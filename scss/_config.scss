@@ -6,7 +6,6 @@ $secondary-color: #ff652f;
   margin: 0;
   padding: 0;
 }
-
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
 }
@@ -24,6 +23,7 @@ $secondary-color: #ff652f;
     @content;
   }
 }
+
 @mixin media-lg {
   @media screen and (min-width: 1024px) {
     @content;
